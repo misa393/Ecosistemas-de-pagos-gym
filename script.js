@@ -6,7 +6,7 @@ document.getElementById("usuarioForm").addEventListener("submit", async e => {
   const nombre = document.getElementById("nombre").value;
   const carne = document.getElementById("carne").value;
 
-  const response = await fetch(`${API_URL}/Usuarios`, {
+  const response = await fetch("http://localhost:5281/api/Usuarios", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ nombre, carne })
@@ -27,7 +27,7 @@ document.getElementById("cuotaForm").addEventListener("submit", async e => {
   const monto = parseFloat(document.getElementById("monto").value);
   const fecha = document.getElementById("fecha").value;
 
-  const response = await fetch(`${API_URL}/Cuotas`, {
+  const response = await fetch("http://localhost:5281/api/Cuotas", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -48,7 +48,7 @@ document.getElementById("cuotaForm").addEventListener("submit", async e => {
 
 // Consultar usuarios
 document.getElementById("btnUsuarios").addEventListener("click", async () => {
-  const response = await fetch(`${API_URL}/Usuarios`);
+  const response = await fetch("http://localhost:5281/api/Usuarios");
   if (response.ok) {
     const usuarios = await response.json();
     const lista = document.getElementById("listaUsuarios");
