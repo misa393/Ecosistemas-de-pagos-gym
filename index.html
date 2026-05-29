@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gym - Ecosistema de Pagos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión de Usuarios y Cuotas</h1>
+
+  <!-- Formulario de usuario -->
+  <section>
+    <h2>Registrar Usuario</h2>
+    <form id="usuarioForm">
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="carne" placeholder="Carné/Contrato" required>
+      <button type="submit">Crear Usuario</button>
+    </form>
+  </section>
+
+  <!-- Formulario de cuota -->
+  <section>
+    <h2>Registrar Cuota</h2>
+    <form id="cuotaForm">
+      <input type="number" id="idUsuario" placeholder="ID Usuario" required>
+      <input type="number" id="monto" placeholder="Monto" required>
+      <input type="date" id="fecha" required>
+      <button type="submit">Crear Cuota</button>
+    </form>
+  </section>
+
+  <!-- Consultar usuarios -->
+  <section>
+    <h2>Usuarios Registrados</h2>
+    <button id="btnUsuarios">Cargar Usuarios</button>
+    <ul id="listaUsuarios"></ul>
+  </section>
+
+  <!-- Notificaciones -->
+  <section>
+    <h2>Notificaciones</h2>
+    <ul id="notificaciones"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

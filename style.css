@@ -1,0 +1,92 @@
+/* Fondo general con gradiente llamativo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1abc9c, #3498db);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Encabezados */
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 2.2em;
+}
+
+h2 {
+  color: #ecf0f1;
+  margin-top: 20px;
+}
+
+/* Secciones tipo tarjeta */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.8);
+  color: #2c3e50;
+  transition: background 0.3s;
+}
+
+input:focus {
+  background: #fff;
+  outline: none;
+}
+
+/* Botones */
+button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: rgba(255,255,255,0.2);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+/* Notificaciones */
+#notificaciones li {
+  background: #f1c40f;
+  border-left: 5px solid #e67e22;
+  color: #2c3e50;
+  font-weight: 600;
+}
